@@ -1,0 +1,29 @@
+[
+    {
+        "id":1,
+        "img": "produto1.webp",
+        "name": "Smartphone motorola E7",
+        "cor":"cinza",
+        "price": "1000",
+        "qtd":0,
+        "total":0
+    },
+    {
+        "id":2,
+        "img": "produto2.webp",
+        "name": "Televisão ultramoderna",
+        "cor":"preta",
+        "price": "1000",
+        "qtd":0,
+        "total":0
+    },
+    {
+        "id":3,
+        "img": "produto2.webp",
+        "name": "Notebook Meirelles Geek",
+        "cor":"cinza",
+        "price": "1000",
+        "qtd":0,
+        "total":0
+    }
+]

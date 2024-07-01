@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carrinho de compras</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <script src="./assets/js/script.js"></script>
+</head>
+<body>
+
+    <div class="container w-100 ">
+        <h1 class="text-center my-4 fs-1"><i id="cifrao" class="bi bi-currency-dollar"></i> Lojinha da unidade</h1>
+        <table class="table table-hover">
+            <thead>
+                <tr>
+                    <th>Imagem</th>
+                    <th>Produto</th>
+                    <th>Preço unitário</th>
+                    <th>Qtd.</th>
+                    <th>Total</th>
+                </tr>
+            </thead>
+            <tbody id="tbody">
+                <tr>
+                    <td>
+                        <img src="./assets/img/produto1.webp" alt="Produto 1">
+                    </td>
+                    <td>
+                        <div>Smartphone motorola E7</div>
+                        <div><span class="produto-item">Código: 123456</span></div>
+                        <div><span class="produto-item">Cor: cinza</span></div>
+                    </td>
+                    <td id="valor_1">R$ 1000</td>
+                    <td>
+                        <span class="badge bg-danger" onclick="subtrair(1)"><i class="bi bi-dash"></i></span>
+                        <span id="qtd_1">0</span>
+                        <span class="badge bg-success" onclick="adicionar(1)"><i class="bi bi-plus"></i></span>
+                    </td>
+                    <td id="total_1">R$ 0.00</td>
+                </tr>
+                <tr>
+                    <td>
+                        <img src="./assets/img/produto2.webp" alt="Produto 1">
+                    </td>
+                    <td>
+                        <div>Televisão ultramoderna</div>
+                        <div><span class="produto-item">Código: 123456</span></div>
+                        <div><span class="produto-item">Cor: preta</span></div>
+                    </td>
+                    <td id="valor_2">R$ 5000</td>
+                    <td>
+                        <span class="badge bg-danger" onclick="subtrair(2)"><i class="bi bi-dash"></i></span>
+                        <span id="qtd_2">0</span>
+                        <span class="badge bg-success" onclick="adicionar(2)"><i class="bi bi-plus"></i></span>
+                    </td>
+                    <td id="total_2">R$ 0.00</td>
+                </tr>
+                <tr>
+                    <td>
+                        <img src="./assets/img/produto3.webp" alt="Produto 1">
+                    </td>
+                    <td>
+                        <div>Notebook Meirelles Geek</div>
+                        <div><span class="produto-item">Código: 123456</span></div>
+                        <div><span class="produto-item">Cor: cinza</span></div>
+                    </td>
+                    <td id="valor_3">R$ 5500</td>
+                    <td>
+                        <span class="badge bg-danger" onclick="subtrair(3)"><i class="bi bi-dash"></i></span>
+                        <span id="qtd_3">0</span>
+                        <span class="badge bg-success" onclick="adicionar(3)"><i class="bi bi-plus"></i></span>
+                    </td>
+                    <td id="total_3">R$ 0.00</td>
+                </tr>
+            </tbody>
+          
+        </table>
+        <footer>
+            <span><i class="bi bi-bag"></i> Subtotal: <span id="subtotal">R$ 0.00</span></span>
+        </footer>
+    </div>
+    
+</body>
+</html>
